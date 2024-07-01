@@ -186,14 +186,15 @@ const Form = ({ user, setUser }: FormComponentProps) => {
 					<button
 						onClick={clearForm}
 						type="button"
-						className="text-sm font-semibold leading-6 text-gray-900"
+						className="font-semibold leading-6 text-gray-900"
 					>
 						Cancelar
 					</button>
 					<button
 						type="submit"
-						className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+						className="rounded-md bg-green-700 px-8 py-2 font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
 						disabled={uploading}
+                        style={{opacity: uploading ? 0.5 : 1, pointerEvents: uploading ? 'none' : 'auto'}}
 					>
 						{uploading ? 'Carregando...' : 'Salvar'}
 					</button>
