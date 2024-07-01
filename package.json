@@ -11,7 +11,6 @@
   "dependencies": {
     "@types/formidable": "^3.4.5",
     "@types/next-pwa": "^5.6.9",
-    "aws-sdk": "^2.1651.0",
     "axios": "^1.7.2",
     "firebase": "^10.12.2",
     "formidable": "^3.5.1",
